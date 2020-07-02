@@ -1,0 +1,56 @@
+.jumbotron-adults {
+    background: url('./pictures/DSC_0204.jpg') no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 500px;
+    text-align: left;
+}
+
+.jumbotron-kids {
+    background: url('./pictures/2016 Hemelvaartstoernooi wedstrijd.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 500px;
+    text-align: left;
+    // background-image: url('./pictures/2016 Hemelvaartstoernooi wedstrijd.jpg');
+	// background-size: cover;
+    // background-repeat: no-repeat;
+    // height: 700px;
+    // text-align: left;
+}
+
+.jumbotron-target-group {
+    //background-color: rgb(255, 153, 0) !important;
+    background: url('./pictures/2015-03-21-Opening-nieuwe-clubhuis-54.jpg') no-repeat   ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 500px;
+    text-align: left;
+}
+
+
+.jumbotron h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jumbotron h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.jumbotron button{
+    margin-top: 20px !important;
+    margin: 10px;
+    padding: 20px;
+    min-width: 300px;
+}
+
+
