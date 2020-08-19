@@ -47,50 +47,20 @@ export default class Home extends Component {
         </Navbar.Collapse>
       </Navbar>
 
-      {this.state.targetGroup === "" &&
+      {!this.state.targetGroup &&
         <Jumbotron className="jumbotron-target-group" >
           <h1>VEO</h1>
           <h3>De allerleukste korfbalvereniging!</h3>
-          <Button onClick={_ => this.setState({ targetGroup: "kids" })} variant="primary" size="lg" >Korfbal voor jeugd</Button>
-          <Button onClick={_ => this.setState({ targetGroup: "adults" })} variant="primary" size="lg" >Korfbal voor volwassenen</Button>
+
+          <Link to="/jeugd">
+            <Button variant="primary" size="lg" >Korfbal voor jeugd</Button>
+          </Link>
+          <Link to="/senioren">
+            <Button variant="primary" size="lg" >Korfbal voor volwassenen</Button>
+          </Link>
         </Jumbotron>
       }
 
-      {this.state.targetGroup === "kids" &&
-        <>
-          < Jumbotron className="jumbotron-kids">
-            <h1>VEO</h1>
-            <h3>De allerleukste korfbalvereniging!</h3>
-          </Jumbotron>
-
-          <Button variant="primary" onClick={this.handleShow}>
-            Launch demo modal
-          </Button>
-
-          {/* <Image src={KangoeroeLogo} fluid /> */}
-          {/* <Image src={Picture} fluid /> */}
-          {/* <VEOCard picture={VeoLogo} /> */}
-
-          <TrainingForm
-            handleClose={this.handleClose}
-            showForm={this.state.showForm}
-          />
-        </>
-      }
-
-      {this.state.targetGroup === "adults" &&
-        <>
-          <Jumbotron className="jumbotron-adults">
-            <h1>VEO</h1>
-            <h3>De allerleukste korfbalvereniging!</h3>
-          </Jumbotron>
-
-          <TrainingForm
-            handleClose={this.handleClose}
-            showForm={this.state.showForm}
-          />
-        </>
-      }
 
     </div>)
   }
